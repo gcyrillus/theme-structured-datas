@@ -43,6 +43,29 @@
 
 						<?php $plxShow->artThumbnail(); ?>
 						<?php $plxShow->artContent(); ?>
+						<script type="application/ld+json">
+						{
+							"@context": "https://schema.org",
+							"@type": "Article",
+							"mainEntityOfPage": {
+								"@type": "WebPage",
+								"@id": "<?php echo $plxShow->plxMotor->plxRecord_arts->f('url'); ?>"
+							},
+							"headline": "<?php $plxShow->artTitle(); ?>",
+							<?php if (trim($plxShow->plxMotor->plxRecord_arts->f('thumbnail'))): ?>
+							"image": "<?php echo $plxShow->plxMotor->urlRewrite(trim($plxShow->plxMotor->plxRecord_arts->f('thumbnail'))); ?>",
+							<?php endif; ?>
+							"datePublished": "<?php $plxShow->artDate('#num_year(4)-#num_month-#num_dayT#hour:#minute:00+#time'); ?>",
+							"dateModified": "<?php  echo plxDate::formatDate($plxShow->plxMotor->plxRecord_arts->f('date_update'), '#num_year(4)-#num_month-#num_dayT#hour:#minute:00+#time') ?>",
+							"author": {
+								"@type": "Person",
+								"name": "<?php $plxShow->artAuthor() ?>"
+							},
+							<?php if (trim($plxShow->plxMotor->plxRecord_arts->f('tags'))): ?>
+							"keywords":"<?php $plxShow->artTags('#tag_name ') ?>"
+							<?php endif; ?>
+						}
+						</script>						
 
 					</article>
 

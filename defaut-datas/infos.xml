@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
 	<title>
-		<![CDATA[defaut-structured-datas]]>
+		<![CDATA[defaut]]>
 	</title>
 	<author>
-		<![CDATA[PluXml-Gcyrillus]]>
+		<![CDATA[PluXml]]>
 	</author>
-	<version>x5.8</version>
-	<date>06/06/2022</date>
-	<site>https://github.com/gcyrillus/theme-structured-datas/</site>
+	<version>5.8</version>
+	<date>03/01/2020</date>
+	<site>https://www.pluxml.org</site>
 	<description>
-		<![CDATA[Thème par défaut de PluXml 5.8 + données structurées concernant les articles et fil d'arianne]]>
+		<![CDATA[Thème par défaut de PluXml 5.8]]>
 	</description>
 </document>
