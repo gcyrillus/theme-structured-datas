@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
 	<title>
-		<![CDATA[defaut]]>
+		<![CDATA[defaut JSON-LD]]>
 	</title>
 	<author>
-		<![CDATA[PluXml]]>
+		<![CDATA[PluXml + gcyrillus]]>
 	</author>
 	<version>5.8</version>
-	<date>03/01/2020</date>
-	<site>https://www.pluxml.org</site>
+	<date>06/06/2022</date>
+	<site>https://github.com/gcyrillus</site>
 	<description>
-		<![CDATA[Thème par défaut de PluXml 5.8]]>
+		<![CDATA[Thème par défaut de PluXml 5.8 et données structurées integrées.]]>
 	</description>
 </document>
