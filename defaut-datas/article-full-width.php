@@ -61,9 +61,9 @@
 							"author": {
 								"@type": "Person",
 								"name": "<?php $plxShow->artAuthor() ?>"
-							},
+							}
 							<?php if (trim($plxShow->plxMotor->plxRecord_arts->f('tags'))): ?>
-							"keywords":"<?php $plxShow->artTags('#tag_name ') ?>"
+							,"keywords":"<?php $plxShow->artTags('#tag_name ') ?>"
 							<?php endif; ?>
 						}
 						</script>						
