@@ -26,7 +26,7 @@
 							"position": 2 ,
 							"name": "<?php echo plxDate::formatDate($plxShow->plxMotor->cible, $plxShow->lang('ARCHIVES').' #month #num_year(4)') ?>",
 							"item": "<?php $plxShow->racine() ?><?php echo $_SERVER['REQUEST_URI']; ?>"
-							},
+							}
 							]
 						}
 					</script>
@@ -84,9 +84,9 @@
 							"author": {
 								"@type": "Person",
 								"name": "<?php $plxShow->artAuthor() ?>"
-							},
+							}
 							<?php if (trim($plxShow->plxMotor->plxRecord_arts->f('tags'))): ?>
-							"keywords":"<?php $plxShow->artTags('#tag_name ') ?>"
+							,"keywords":"<?php $plxShow->artTags('#tag_name ') ?>"
 							<?php endif; ?>
 						}
 						</script>						
