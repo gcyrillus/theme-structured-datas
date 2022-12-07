@@ -10,6 +10,7 @@
 	<date>06/06/2022</date>
 	<site>https://github.com/gcyrillus</site>
 	<description>
-		<![CDATA[Thème par défaut de PluXml 5.8 et données structurées integrées.]]>
+		<![CDATA[Thème par défaut de PluXml 5.8 et ld-json / données structurées integrées.
+			Défaut menu mobile groupe déroulant corrigé.]]>
 	</description>
 </document>

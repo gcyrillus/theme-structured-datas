@@ -23,7 +23,7 @@
 	font-style: normal;
 }
 body {
-	--header-height: 7rem;
+	--header-height: 10rem;
 	--header-padding-top: 1.3rem;
 	--bg-height: 250px;
 	font-family: 'open_sansregular', sans-serif;
@@ -38,7 +38,7 @@ body {
 	font-size: 2rem;
 }
 .header {
-	background-color: #fff;
+	background-color: #f3a85d;
 	border-bottom: 1px solid #ddd;
 	padding-top: var(--header-padding-top);
 	height: var(--header-height);
@@ -59,7 +59,7 @@ body {
 	margin-left: -5rem;
 }
 .bg {
-	background: url(../img/bg.jpg) no-repeat top left;
+	background: url(../img/geronimo-giqueaux-6MwNAOdp35s-unsplash.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -76,6 +76,7 @@ ul.menu {}
 .menu>li {
 	font-size: 1.5rem;
 	margin-left: .5rem;
+	position:relative;
 }
 
 .menu a {
@@ -92,6 +93,7 @@ ul.menu {}
 	padding: 0;
 	line-height: 2.8rem;
 	z-index: 10;
+	width: 100%
 }
 .menu > li:last-of-type ul {
 	right: 0;
@@ -111,6 +113,9 @@ ul.menu {}
 }
 .menu .sub-menu li {
 	padding: 0 0.35rem;
+	border-radius:0;
+	background: #FFD5B5;
+		
 }
 .menu .sub-menu li:last-of-type {
 	padding-bottom: 0.35rem;
@@ -679,4 +684,20 @@ article:after {
 	.static.menu a {
 		padding: 0;
 	}
+}
+
+/* last minute */
+h1, h2, h3, h4, h5, h6, article.article  h2 a {
+  color: #9BAE1C;
+}
+.cat-list li:not(#cat-8,#cat-12) {
+  margin-inline-start: 1em;
+}
+aside .cat-list li a {
+  border-radius: 5px;
+  padding: 0 0.15em;
+}
+
+body>footer.footer {
+	background:  linear-gradient(to top, #f3a85d, #f3a85d00) bottom center / auto 9rem repeat-x
 }

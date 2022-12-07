@@ -12,7 +12,7 @@
 ?>
 	<link rel="icon" href="<?php $plxShow->template(); ?>/img/favicon.png" />
 	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/plucss.css?v=1.3.1" media="screen,print"/>
-	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/theme.css?v=<?php echo PLX_VERSION ?>" media="screen"/>
+	<link rel="stylesheet" href="<?php $plxShow->template(); ?>/css/theme.css?v=<?php echo PLX_VERSION ?>.defaut-ld-json" media="screen"/>
 <?php
 	$plxShow->templateCss();
 	$plxShow->pluginsCss();
@@ -58,7 +58,19 @@
 			</div>
 
 		</div>
-
+		<script type="application/ld+json">{
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			"name": "<?php $plxShow->mainTitle(); ?>",
+			"url": "<?php echo $plxShow->plxMotor->racine; ?>",
+			/*"sameAs": ["https://facebook.com/page", "https://plus.google.com/site", "https://twitter.com/name"],*/
+			<?php if(isset($plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']))  {	?>
+"potentialAction": {
+					"@type": "SearchAction",
+					"target": "<?php echo $plxShow->plxMotor->racine .$plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']->getParam('url') ; ?>"
+			}
+<?php } ?>
+		}</script>
 	</header>
 
 	<div class="bg"></div>

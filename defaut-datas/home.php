@@ -68,9 +68,7 @@
     ,"keywords":"<?php $plxShow->artTags('#tag_name ') ?>"
     <?php endif; ?>
 }
-</script>
-						
-						
+</script>	<!-- -->						
 						
 
 					</article>
