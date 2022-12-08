@@ -64,10 +64,11 @@
 			"name": "<?php $plxShow->mainTitle(); ?>",
 			"url": "<?php echo $plxShow->plxMotor->racine; ?>",
 			/*"sameAs": ["https://facebook.com/page", "https://plus.google.com/site", "https://twitter.com/name"],*/
-			<?php if(isset($plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']))  {	?>
+			<?php if(isset($plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']) && $plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']->getParam('method') == 'get' && $plxShow->plxMotor->aConf['urlrewriting'])  {	?>
 "potentialAction": {
 					"@type": "SearchAction",
-					"target": "<?php echo $plxShow->plxMotor->racine .$plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']->getParam('url') ; ?>"
+					"target": "<?php echo $plxShow->plxMotor->racine .$plxShow->plxMotor->plxPlugins->aPlugins['plxMySearch']->getParam('url').'?searchfield={searchfield}' ; ?>",
+		            "query-input": "required name=searchfield"
 			}
 <?php } ?>
 		}</script>
